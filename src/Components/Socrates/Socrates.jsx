@@ -1,5 +1,5 @@
 import "./Socrates.css";
-import { FcFactory } from "react-icons/fc";
+import logo from '../../assets/images/logo1.svg'
 import { CiSearch } from "react-icons/ci";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa";
@@ -9,7 +9,7 @@ export const Socrates = () => {
     <div className="socrates">
       <div className="soc-top">
         <div className="soc-top-left">
-          <FcFactory />
+          <img src={logo} alt="" />
           <span>socrates</span>
         </div>
         <div className="soc-top-right">

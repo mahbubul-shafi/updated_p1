@@ -4,37 +4,34 @@
   gap: 10px;
   padding: 20px;
   font-weight: 600;
-  margin: 20px;
-  width: 52vw;
+  margin: 30px 0px 8px 0px;
+  width: 56vw;
 }
 
 .bigcards-row1,
 .bigcards-row2 {
   display: flex;
   gap: 10px;
+  width: 100%;
 }
 
 .card {
   display: flex;
+  flex: 1;
+  min-width: 200px;
   align-items: center;
   gap: 15px;
-  padding: 30px;
+  padding: 20px;
   background-color: rgb(37, 37, 37);
   border-radius: 15px;
-  height: 120px;
+  height: auto;
   box-sizing: border-box;
-  width: 26vw;
-}
-
-.card svg {
-  font-size: 35px; /* Fixed size for all icons */
-  color: #ffffff;
-  min-width: 35px; /* Ensure icons don't shrink */
+  cursor: pointer;
 }
 
 .card p {
   margin: 0;
-  font-size: 0.9rem; /* Adjusted text size */
+  font-size: 18px;
   color: #ffffff;
 }
 
@@ -46,7 +43,6 @@
 }
 
 .card-2-search p {
-  font-size: 0.9rem; /* Adjusted text size */
   color: #ffffff;
 }
 
@@ -59,32 +55,101 @@
 
 .card-2-search-input input {
   flex: 1;
-  padding: 8px 16px; /* Decreased padding for smaller input */
+  padding: 10px 20px;
   border-radius: 50px;
-  font-size: 0.75rem; /* Smaller font size for input */
+  font-size: 14px;
+  font-weight: 800;
   background-color: rgb(56, 56, 56);
   border: none;
   outline: none;
   box-shadow: none;
   color: #ffffff;
-  padding-right: 90px; /* Adjusted for smaller button */
+  padding-right: 90px;
 }
 
 .card-2-search-input button {
-  padding: 8px 16px; /* Decreased padding for smaller button */
-  background-color: rgb(81, 81, 81);
+  padding: 10px 20px;
+  background-color: #ffffff26;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 2px;
   color: white;
   border: none;
   border-radius: 50px;
-  font-size: 0.75rem; /* Smaller font size for button */
   cursor: pointer;
   position: absolute;
   right: 0;
   height: 100%;
   width: auto;
+  font-weight: 600;
+}
+
+.card-2-search-input button:hover {
+  background: #ff8c00;
+  border: 1px solid orange;
 }
 
 .card-3,
 .card-4 {
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .bigcards {
+    width: 70vw;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+
+  .card-2-search-input input {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  .card-2-search-input button {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bigcards {
+    width: 90vw;
+  }
+
+  .bigcards-row1,
+  .bigcards-row2 {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .card-2-search-input input {
+    padding-right: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card p {
+    font-size: 14px;
+  }
+
+  .card-2-search-input input {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+
+  .card-2-search-input button {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
 }

@@ -6,34 +6,42 @@
   margin: 60px;
 }
 
-.bigbutton1,
-.bigbutton2 {
-  padding: 12px 30px;
+.bigbutton button {
+  padding: 23px 32px;
   border-radius: 50px;
   color: white;
-  font-size: 1rem;
+  font-size: 16px;
   cursor: pointer;
   width: 250px;
   height: 65px;
   text-align: center;
   line-height: 1;
   white-space: nowrap;
+  transition: border 0.3s ease, background 0.3s ease;
 }
-
-.bigbutton1 {
+.bigbutton1{
   background-color: transparent;
+  border: 1px solid rgb(169, 169, 169);
+}
+.bigbutton2{
+  background-color: #ffffff26;
+  border: 1px solid #ffffff26;
+}
+.bigbutton1:hover {
   border: 1px solid orange;
 }
 
-.bigbutton2 {
+.bigbutton2:hover {
   background: linear-gradient(90deg, #ff8c00, #ffd700);
   border: 1px solid orange;
 }
 
 .bigbutton span {
   color: white;
-  font-size: 1rem;
+  font-size: 16px;
 }
+
+/* another issue */
 
 .tooltip-container {
   position: relative;
@@ -51,15 +59,15 @@
   width: 300px;
   background-color: #333;
   color: #fff;
-  text-align: left; /* Align text to the left */
+  text-align: left; 
   border-radius: 6px;
   padding: 10px;
-  position: fixed; /* Position relative to the viewport */
+  position: fixed; 
   z-index: 1000;
-  font-size: 0.75rem; /* Smaller font size */
+  font-size: 0.75rem; 
   opacity: 0;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Prevent tooltip from blocking clicks */
+  pointer-events: none; 
 }
 
 .tooltip-container:hover .tooltip-text {

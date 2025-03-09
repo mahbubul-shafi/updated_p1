@@ -11,20 +11,25 @@
     margin: 20px;
   }
   .bigtext h1 {
-    font-size: 3rem;
+    font-size: 54px;
+    font-weight: 500;
     margin: 0;
   }
   
   .bigtext p {
-    font-size: 0.76rem;
+    font-size: 14px;
+    color: #b8b8b8;
   }
   
   .bigtext p:last-child {
-    color: orange;
+    color: #ff9933;
   }
   .cloud-icon {
-    transform: rotate(-20deg);
+    transform: rotate(-10deg);
     display: inline-flex; 
     align-items: center; 
     justify-content: center;
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    width: 70px;
   }

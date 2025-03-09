@@ -1,7 +1,7 @@
 import './Upgrade.css'
 import { FaAirbnb } from "react-icons/fa6";
 import { FiSettings } from "react-icons/fi";
-import pic from '../../assets/images/jessica.png'
+import pic from '../../assets/images/jessica.jpg'
 
 export const Upgrade = () => {
   return (

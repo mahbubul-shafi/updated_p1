@@ -1,6 +1,6 @@
 import React from "react";
 import "./Bigtext.css";
-import { FaCloud } from "react-icons/fa";
+import cloud from "../../assets/images/cloud.svg"
 
 export const Bigtext = () => {
   return (
@@ -8,7 +8,7 @@ export const Bigtext = () => {
       <div className="bigtext-heading">
         <h1>Add Files to </h1>
         <div className="cloud-icon">
-          <FaCloud size={50} color="#00BFFF" />
+          <img src={cloud} alt="" />
         </div>
         <h1>Cloud Chat</h1>
       </div>

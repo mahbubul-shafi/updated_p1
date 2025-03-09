@@ -1,7 +1,7 @@
-import React from "react";
-import { AiOutlineDrag } from "react-icons/ai";
-import { FaGoogleDrive, FaDropbox } from 'react-icons/fa';
-import { FiLink } from 'react-icons/fi';
+import drag_drop from "../../assets/images/drag-drop.svg"
+import url from "../../assets/images/url.svg"
+import dropbox from "../../assets/images/dropbox.svg"
+import google_drive from "../../assets/images/google-drive.svg"
 import './Bigcards.css'
 
 export const Bigcards = () => {
@@ -9,11 +9,11 @@ export const Bigcards = () => {
     <div className="bigcards">
       <div className="bigcards-row1">
         <div className="card card-1">
-          <AiOutlineDrag size={35}/>
+          <img src={drag_drop} alt="" />
           <p>Drag & drop local files here, or click to select</p>
         </div>
         <div className="card card-2">
-          <FiLink size={35}/>
+          <img src={url} alt="" />
           <div className="card-2-search">
             <p>Enter in a public URL:</p>
             <div className="card-2-search-input">
@@ -25,11 +25,11 @@ export const Bigcards = () => {
       </div>
       <div className="bigcards-row2">
       <div className="card card-3">
-          <FaDropbox size={35}/>
+          <img src={dropbox} alt="" />
           <p>Add files from dropbox</p>
         </div>
         <div className="card card-4">
-          <FaGoogleDrive size={35}/>
+          <img src={google_drive} alt="" />
           <p>Add files from google drive</p>
         </div>
       </div>
