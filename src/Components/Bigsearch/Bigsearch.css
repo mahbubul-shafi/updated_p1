@@ -1,0 +1,50 @@
+.bigsearch {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(35, 34, 34);
+    border-radius: 50px;
+    width: 50vw;
+  }
+  
+  .bigsearch-1,
+  .bigsearch-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #2a2a2a;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 0.75rem;
+    width: fit-content; /* Prevent divs from taking full width */
+  }
+  
+  .bigsearch-1 svg,
+  .bigsearch-2 svg {
+    font-size: 0.75rem;
+    color: #ffffff;
+  }
+  
+  .bigsearch-1 input[type="checkbox"],
+  .bigsearch-2 input[type="checkbox"] {
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .bigsearch-1 span,
+  .bigsearch-2 span {
+    margin: 0;
+  }
+  
+  .bigsearch-1 .FaExclamation,
+  .bigsearch-2 .FaExclamation {
+    color: #ffcc00;
+  }
+  
+  .bigsearch-1 .FaTimes,
+  .bigsearch-2 .FaTimes {
+    color: #ff4444;
+    cursor: pointer;
+  }

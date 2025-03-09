@@ -1,0 +1,90 @@
+.bigcards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  font-weight: 600;
+  margin: 20px;
+  width: 52vw;
+}
+
+.bigcards-row1,
+.bigcards-row2 {
+  display: flex;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 30px;
+  background-color: rgb(37, 37, 37);
+  border-radius: 15px;
+  height: 120px;
+  box-sizing: border-box;
+  width: 26vw;
+}
+
+.card svg {
+  font-size: 35px; /* Fixed size for all icons */
+  color: #ffffff;
+  min-width: 35px; /* Ensure icons don't shrink */
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.9rem; /* Adjusted text size */
+  color: #ffffff;
+}
+
+.card-2-search {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.card-2-search p {
+  font-size: 0.9rem; /* Adjusted text size */
+  color: #ffffff;
+}
+
+.card-2-search-input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.card-2-search-input input {
+  flex: 1;
+  padding: 8px 16px; /* Decreased padding for smaller input */
+  border-radius: 50px;
+  font-size: 0.75rem; /* Smaller font size for input */
+  background-color: rgb(56, 56, 56);
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: #ffffff;
+  padding-right: 90px; /* Adjusted for smaller button */
+}
+
+.card-2-search-input button {
+  padding: 8px 16px; /* Decreased padding for smaller button */
+  background-color: rgb(81, 81, 81);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.75rem; /* Smaller font size for button */
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: auto;
+}
+
+.card-3,
+.card-4 {
+  cursor: pointer;
+}
